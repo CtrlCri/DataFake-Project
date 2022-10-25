@@ -1,1 +1,10 @@
+### Django ###
+datafake/db.sqlite3
+datafake/datafake/__pycache__/
+datafake/dataset/__pycache__/
+
+
+
+# Environments
 venv/
+.env
