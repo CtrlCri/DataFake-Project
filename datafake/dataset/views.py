@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse
 
 from .models import Dataset
@@ -10,4 +10,7 @@ def index(request):
     })
 
 def detail(request, id):
-    return HttpResponse(f"Estás viendo el dataset número {id}")
+    dataset = get_object_or_404(Dataset, pk=id)
+    return render(request, "dataset/detail.html", {
+        "dataset": dataset
+    })

@@ -1,7 +1,8 @@
 from django.urls import path
 from . import views
 
+app_name = "dataset"
 urlpatterns = [
     path("", views.index, name="index"),
-    path("<int:id>/", views.detail, name="index")
+    path("<int:id>/", views.detail, name="detail")
 ]
