@@ -23,5 +23,3 @@ class Like(models.Model):
     user =models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     dataset = models.ForeignKey(Dataset, related_name='likes', on_delete=models.CASCADE)
 
-    def __str__(self):
-        return self.user
