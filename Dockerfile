@@ -1,0 +1,16 @@
+# Pull base image
+FROM python:3.11.0-alpine3.17
+
+# Set enviroment variables
+ENV PYTHONUNBAFFERED=1
+
+# Set work directory
+WORKDIR /app
+
+# install dependencies
+COPY ./requirements.txt ./
+RUN pip install -r requirementes.txt
+
+# Copy project
+COPY ./ ./
+
