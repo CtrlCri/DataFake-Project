@@ -1,7 +1,7 @@
 # Pull base image
 FROM python:3.11.0-alpine3.17
 
-# Set enviroment variables
+# Set environment variables
 ENV PYTHONUNBAFFERED=1
 
 # Set work directory
