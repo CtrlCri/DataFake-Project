@@ -1,9 +1,0 @@
-{% if latest_dataset_list %}
-<ul>
-  {% for dataset in latest_dataset_list %}
-  <li><a href="{% url 'dataset:detail' dataset.id %}">{{ dataset.title }}</a></li>
-  {% endfor %}
-</ul>
-{% else %}
-<p>No datasets are available.</p>
-{% endif %}
