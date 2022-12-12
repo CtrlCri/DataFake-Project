@@ -1,0 +1,5 @@
+venv/
+.env
+core/__pycache__/
+dataset/__pycache__/
+users/__pycache__/
